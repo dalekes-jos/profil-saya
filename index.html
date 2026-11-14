@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nama Contoh — Profil</title>
+  <meta name="description" content="Halaman profil sederhana. Data di situs ini masih contoh dan bisa diganti.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231a1814'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23f6f3ee'%3ENC%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --ink: #1a1814;
+      --muted: #5e584f;
+      --line: #ddd6cb;
+      --card: #fffdf9;
+      --accent: #1f4d3a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    .notice {
+      margin: 0;
+      padding: 0.7rem 1.25rem;
+      background: #1a1814;
+      color: #f6f3ee;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .wrap {
+      width: min(720px, calc(100% - 2.5rem));
+      margin: 0 auto;
+      padding: 4.5rem 0 3.5rem;
+    }
+
+    .mark {
+      width: 4.25rem;
+      height: 4.25rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--bg);
+      font-family: Georgia, "Palatino Linotype", Palatino, serif;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 1.35rem 0 0.35rem;
+      font-family: Georgia, "Palatino Linotype", Palatino, serif;
+      font-weight: 500;
+      font-size: clamp(2.6rem, 7vw, 4.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .role {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      margin: 1.75rem 0 0;
+      max-width: 38rem;
+      font-size: 1.18rem;
+      line-height: 1.7;
+    }
+
+    section { margin-top: 3rem; }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 0.82rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skills li {
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--card);
+    }
+
+    .work li {
+      padding: 1.15rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .work li:last-child { border-bottom: 1px solid var(--line); }
+
+    .work h3 {
+      margin: 0;
+      font-family: Georgia, "Palatino Linotype", Palatino, serif;
+      font-size: 1.45rem;
+      font-weight: 500;
+    }
+
+    .work p {
+      margin: 0.3rem 0 0;
+      color: var(--muted);
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.4rem;
+    }
+
+    .contact a {
+      font-weight: 650;
+      text-underline-offset: 0.22em;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 600px) {
+      .wrap { padding-top: 2.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <p class="notice">Data contoh. Ganti nama, bio, dan kontak di file index.html sebelum tautan ini dibagikan.</p>
+
+  <!-- GANTI teks di bawah ini dengan data Anda -->
+  <main class="wrap">
+    <div class="mark" aria-hidden="true">NC</div>
+    <h1>Nama Contoh</h1>
+    <p class="role">Pembuat cerita &amp; halaman web</p>
+    <p class="bio">
+      Halo. Saya Nama Contoh, dan halaman ini adalah tempat singkat untuk
+      memperkenalkan diri. Saya suka menyusun kata dan halaman yang rapi,
+      supaya orang bisa mengenal saya tanpa harus membuka banyak tautan.
+      Ganti paragraf ini dengan cerita Anda sendiri.
+    </p>
+
+    <section aria-labelledby="keahlian">
+      <h2 id="keahlian">Keahlian</h2>
+      <ul class="skills">
+        <li>Menulis yang jelas</li>
+        <li>Halaman satu layar</li>
+        <li>HTML &amp; CSS</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="proyek">
+      <h2 id="proyek">Proyek contoh</h2>
+      <ul class="work">
+        <li>
+          <h3>Jurnal kecil</h3>
+          <p>Catatan perjalanan, resep keluarga, dan hal-hal yang ingin diingat.</p>
+        </li>
+        <li>
+          <h3>Peta warung</h3>
+          <p>Daftar tempat makan favorit, lengkap dengan catatan singkat kenapa enak.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="kontak">
+      <h2 id="kontak">Kontak</h2>
+      <div class="contact">
+        <a href="mailto:nama@contoh.com">nama@contoh.com</a>
+        <a href="https://github.com/dalekes-jos">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Halaman profil sederhana · 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
